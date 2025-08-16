@@ -75,19 +75,19 @@ void CardController::moveToOldPos(const UndoCardPosition& state) {
                 cardView->runAction(moveTo); // move到老位置
                 card.setPosition(state.position); // 修改卡牌模型的位置、区域信息
                 card.setZone(state.zone);
-                cardView->setGlobalZOrder(0);
+                cardView->setGlobalZOrder(0); // 设置新层级，置于最底部
             }
             return;
         }
     }
 
-    for (auto card : stackField) { // 查看是否在堆区，修改卡牌模型的位置、区域信息， move 到相应位置
-        if (card.getCardId() == state.cardId) {
+    for (auto card : stackField) {
+        if (card.getCardId() == state.cardId) { // 查看是否在堆区
             CardView* cardView = getCardView(card);
             if (cardView) {
                 auto moveTo = cocos2d::MoveTo::create(0.5f, state.position);
-                cardView->runAction(moveTo);
-                card.setPosition(state.position);
+                cardView->runAction(moveTo); // move到老位置
+                card.setPosition(state.position); // 修改卡牌模型的位置、区域信息
                 card.setZone(state.zone);
                 cardView->setGlobalZOrder(0);
             }
