@@ -20,11 +20,10 @@ public:
 
     // 向模型的 id 和 管理器的映射 map 表中进行注册，视图指针和数据模型的初始化
     void setCard(const CardModel& model, CardView* view);
-    void setupTouchEvents(); // 绑定 touch 事件
+    void setTouchEvents(); // 绑定 touch 事件
 
-    // 相应的绑定事件
+    // 相应的事件
     bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
-    void onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event);
     void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
     void onTouchCancelled(cocos2d::Touch* touch, cocos2d::Event* event);
 
@@ -36,8 +35,6 @@ public:
 private:
     CardModel _model;
     CardView* _view;
-    bool _isSelected;
-
     std::function<void()> _cardClickedCallback;
 };
 

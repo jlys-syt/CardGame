@@ -21,28 +21,23 @@ public:
     ~CardController();
 
     // 点击主牌堆中的牌和底牌匹配
-    bool selectCardFromPlayefieldAndMatch(CardModel& selectedCard);
+    void clickPlayFieldCard(CardModel& card);
 
     // 点击Stack区的卡牌，记录其状态到UndoModel中
     void clickStackCard(CardModel& card);
 
-    // 处理卡片点击事件
-    void handleCardClicked(CardModel& card);
-
-    // 点击回退按钮
-    bool undo();
-
     // 处理回退标签点击事件
-    void handleLabelClick();
+    void handleLabelClick();    
+
 private:
     GameModel _gameModel;
     UndoManager _undoManager;
 
-    // 获取底牌的CardModel
-    CardModel getBottomCard();
+    // 获取手牌
+    CardModel getHandCard();
 
-    // 检查两张牌是否匹配，返回 bool 类型
-    bool isCardMatch(const CardModel& card1, const CardModel& card2);
+    //移动到手牌区域
+    void moveToHandPos(CardModel& card);
 
     // 移动卡牌到原位置
     void moveToOldPos(const UndoCardPosition& state);

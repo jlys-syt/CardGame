@@ -10,8 +10,8 @@
 /**
 * @class GameModelFromLevelGenerator
 * @notos 静态类
-* @duty 提供生成游戏模型 和 获得游戏视图对象的接口
-* @scene 加载关卡游戏数据、生成运行时游戏数据
+* @duty 提供生成游戏模型 和 生成游戏视图对象的接口
+* @scene 加载关卡游戏数据、渲染界面
 */
 
 class GameModelFromLevelGenerator

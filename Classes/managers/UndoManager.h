@@ -17,23 +17,23 @@ public:
         _undoModel = undoModel;
     }
     
-    void recordUndoState(const UndoCardPosition& state) { // 添加回退记录
+    void recordState(const UndoCardPosition& state) { // 添加回退状态
         _undoModel.addUndo(state);
     }
     
-    bool undo(UndoCardPosition& outState) { // 删除回退记录，并记录在 outState 中进行返回
+    bool undo(UndoCardPosition& outState) { // 删除回退状态，并记录在 outState 中进行返回
         return _undoModel.undo(outState);
     }
     
     bool canUndo() const { // 判断能否回退
-        return _undoModel.UodoStackIsNEmpty();
+        return _undoModel.UndoStackNEmpty();
     }
 
-    void clearUndoHistory() { // 清空回退栈
+    void clearStates() { // 清空回退栈
         _undoModel.clearStack();
     }
 
-    int getUndoSize() { // 获得回退栈卡牌记录的个数
+    int getUndoSize() { // 获得回退栈卡牌状态的个数
         return _undoModel.getSize();
     }
 

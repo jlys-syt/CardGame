@@ -12,7 +12,7 @@
 * @class GameView
 * @notos 静态类,游戏视图
 * @duty 初始化各区域的卡片模型视图，注册backLabel的点击事件,设置卡片模型的点击逻辑的回调函数
-* @scene 加载关卡游戏数据，生成运行时游戏数据
+* @scene 渲染界面
 */
 
 class GameView : public cocos2d::Node {

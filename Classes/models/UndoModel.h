@@ -28,7 +28,7 @@ public:
         _undoStack.push(topPos);  // 
     }
 
-    // 回退炒作，pop 栈顶记录
+    // 回退操作，pop 栈顶记录
     bool UndoModel::undo(UndoCardPosition& topPos) { //返回值通过参数topPos带回
         if (_undoStack.empty()) { // 无记录
             return false;
@@ -48,7 +48,7 @@ public:
         }
     }
 
-    bool UodoStackIsNEmpty() const { return !_undoStack.empty(); } // 判断回退栈是否为空
+    bool UndoStackNEmpty() const { return !_undoStack.empty(); } // 判断回退栈是否为空
 
     int getSize() const { return _undoStack.size(); } // 返回回退栈的的记录个数
 private:

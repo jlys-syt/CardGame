@@ -14,7 +14,7 @@ class CardModel; // 前向声明
 * @class CardView
 * @notos 静态类，卡片视图
 * @duty 加载卡片视图的图片资源，
-* @scene 加载关卡游戏数据，生成运行时游戏数据
+* @scene 渲染卡片界面
 */
 
 class CardView : public Node {

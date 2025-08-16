@@ -8,7 +8,7 @@ USING_NS_CC;
 * @class CardModel
 * @notos 卡片实体类
 * @duty 抽象出来卡片实体类，并提供的 get 和 set 方法
-* @scene 数据可以加工成 CardModel 对象类型
+* @scene 数据可以加工成 CardModel 对象类型进行存储
 */
 
 enum class CardZone {

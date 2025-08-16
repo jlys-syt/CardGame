@@ -19,7 +19,6 @@ bool GameView::init(GameModel& model){
 	generateCardViews(model);
 
 	_backLabel = cocos2d::Label::createWithSystemFont(u8"回退", "Microsoft YaHei", 36); // 标签设置
-	//_backLabel->setPosition(900, 400);
 	_backLabel->setPosition(680,110);
 	_backLabel->setTextColor(cocos2d::Color4B::WHITE);
 	this->addChild(_backLabel, 100);
@@ -35,7 +34,7 @@ void GameView::generateCardViews(GameModel& model) {
 		// 调用 GameController 处理卡牌点击逻辑
 		CardModel& cardModel = cardView->_cardManager->getModel();
 		if (cardModel.getZone() == CardZone::Playfield) {
-			_cardController->selectCardFromPlayefieldAndMatch(cardModel);
+			_cardController->clickPlayFieldCard(cardModel);
 		}
 		else if (cardModel.getZone() == CardZone::Stack) {
 			_cardController->clickStackCard(cardModel);
