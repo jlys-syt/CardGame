@@ -109,7 +109,7 @@ CardView* CardController::getCardView(const CardModel& card)
     return view;
 }
 
- // 处理卡牌点击逻辑
+ // 移动到老位置
 void CardController::moveToHandPos(CardModel& card) {
     if (card.getZone() != CardZone::Hand) { // 非手牌自己匹配
         auto oldZone = card.getZone();
