@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\dell\Desktop\game\CardGame\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\controllers\CardController.cpp">
+      <Filter>Source Files\Classes\controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\managers\CardManager.cpp">
+      <Filter>Source Files\Classes\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\views\CardView.cpp">
+      <Filter>Source Files\Classes\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\views\GameView.cpp">
+      <Filter>Source Files\Classes\views</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\configs\loaders\LevelConfigLoader.cpp">
+      <Filter>Source Files\Classes\configs\loaders</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\controllers\CardController.h">
+      <Filter>Source Files\Classes\controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\CardManager.h">
+      <Filter>Source Files\Classes\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\UndoManager.h">
+      <Filter>Source Files\Classes\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\models\CardModel.h">
+      <Filter>Source Files\Classes\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\models\GameModel.h">
+      <Filter>Source Files\Classes\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\models\UndoModel.h">
+      <Filter>Source Files\Classes\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\views\CardView.h">
+      <Filter>Source Files\Classes\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\views\GameView.h">
+      <Filter>Source Files\Classes\views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\services\CardIdManagerMap.h">
+      <Filter>Source Files\Classes\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\services\GameModelFromLevelGenerator.h">
+      <Filter>Source Files\Classes\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\configs\models\LevelConfig.h">
+      <Filter>Source Files\Classes\configs\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\configs\loaders\LevelConfigLoader.h">
+      <Filter>Source Files\Classes\configs\loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\configs\models\CardResConfig.h">
+      <Filter>Source Files\Classes\configs\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\controllers\GameController.h">
+      <Filter>Source Files\Classes\controllers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dell\Desktop\game\CardGame\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{BAC340BB-810F-3092-AA3C-6FAB680569C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{66E38664-AB14-3A47-BEAE-A99343F2E996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{A345A14F-3D8F-3E88-A749-BACEAD4CE36E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9069B5B9-AB22-320D-A9EC-CB154D181225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{841BD375-5AEA-3969-B657-9EE9B6648C80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{DB35A7A1-9465-3E91-893A-2EA7A7A1789C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\controllers">
+      <UniqueIdentifier>{903cca7a-cfc6-4774-8c7f-b44d03987b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\managers">
+      <UniqueIdentifier>{75bcb696-a675-4f5b-95bd-a52a42f7b1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\services">
+      <UniqueIdentifier>{219769f3-4cd2-41ed-aa9d-bdaeb427116c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\models">
+      <UniqueIdentifier>{7ca61bf6-8776-439e-8cb9-0f5744c7d9e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\views">
+      <UniqueIdentifier>{654f0b04-14b1-45d2-a0b1-f5f33ef58519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\utils">
+      <UniqueIdentifier>{70b59bae-3f95-4c60-bc8d-fbd514be48da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\configs">
+      <UniqueIdentifier>{f2f2df6c-fd13-4d35-8e9e-9a0d1bede33f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\configs\loaders">
+      <UniqueIdentifier>{cd36e6a8-de39-4622-9d1e-53aaeeb7a388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\configs\models">
+      <UniqueIdentifier>{14091870-b5a0-4d3e-906f-7f4a03e6c414}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\level_1.json">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

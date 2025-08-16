@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4D76F9E-F3FB-3EA1-9978-A33A90DA64BE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>CardGame</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\dell\Desktop\game\CardGame\build\bin\CardGame\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CardGame.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CardGame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\dell\Desktop\game\CardGame\build\bin\CardGame\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CardGame.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CardGame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\dell\Desktop\game\CardGame\build\bin\CardGame\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CardGame.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CardGame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\dell\Desktop\game\CardGame\build\bin\CardGame\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CardGame.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CardGame</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/Box2D/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/png/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+editbin /SUBSYSTEM:CONSOLE $(OUTDIR)\$(ProjectName).exe</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/dell/Desktop/game/CardGame/build/Debug/CardGame.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Debug/CardGame.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/Box2D/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/png/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/dell/Desktop/game/CardGame/build/Release/CardGame.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/Release/CardGame.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/Box2D/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/png/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/dell/Desktop/game/CardGame/build/MinSizeRel/CardGame.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/MinSizeRel/CardGame.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/Box2D/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/chipmunk/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/webp/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/png/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\dell\Desktop\game\CardGame\Classes;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\include;C:\Users\dell\Desktop\game\CardGame\cocos2d;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\recast\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\tinyxml2\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxhash\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\xxtea\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\clipper\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\edtaa3func\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\ConvertUTF\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\poly2tri\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\md5\..;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\unzip\.;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\include\bullet;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\include\win32;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/dell/Desktop/game/CardGame/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\dell\Desktop\game\CardGame\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/dell/Desktop/game/CardGame/build/RelWithDebInfo/CardGame.lib</ImportLibrary>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/dell/Desktop/game/CardGame/build/bin/CardGame/RelWithDebInfo/CardGame.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dell\Desktop\game\CardGame\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeCXXCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeRCCompiler.cmake;C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\4.1.0\CMakeSystem.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\dell\Desktop\game\CardGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\dell\Desktop\game\CardGame\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\configs\loaders\LevelConfigLoader.h" />
+    <ClInclude Include="..\Classes\configs\models\CardResConfig.h" />
+    <ClInclude Include="..\Classes\configs\models\LevelConfig.h" />
+    <ClInclude Include="..\Classes\controllers\CardController.h" />
+    <ClInclude Include="..\Classes\controllers\GameController.h" />
+    <ClInclude Include="..\Classes\managers\CardManager.h" />
+    <ClInclude Include="..\Classes\managers\UndoManager.h" />
+    <ClInclude Include="..\Classes\models\CardModel.h" />
+    <ClInclude Include="..\Classes\models\GameModel.h" />
+    <ClInclude Include="..\Classes\models\UndoModel.h" />
+    <ClInclude Include="..\Classes\services\CardIdManagerMap.h" />
+    <ClInclude Include="..\Classes\services\GameModelFromLevelGenerator.h" />
+    <ClInclude Include="..\Classes\views\CardView.h" />
+    <ClInclude Include="..\Classes\views\GameView.h" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Classes\HelloWorldScene.h" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\main.h" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\configs\loaders\LevelConfigLoader.cpp" />
+    <ClCompile Include="..\Classes\controllers\CardController.cpp" />
+    <ClCompile Include="..\Classes\managers\CardManager.cpp" />
+    <ClCompile Include="..\Classes\views\CardView.cpp" />
+    <ClCompile Include="..\Classes\views\GameView.cpp" />
+    <ClCompile Include="C:\Users\dell\Desktop\game\CardGame\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\main.cpp" />
+    <ResourceCompile Include="C:\Users\dell\Desktop\game\CardGame\proj.win32\game.rc" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\Users\dell\Desktop\game\CardGame\Resources\res\.gitkeep" />
+    <ClCompile Include="C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\level_1.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\ZERO_CHECK.vcxproj">
+      <Project>{1A932721-19B2-3022-8AA4-ADBB94A209A4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\SYNC_RESOURCE-CardGame.vcxproj">
+      <Project>{DE5BCAB0-03C5-3266-8758-CAA6FDDD6750}</Project>
+      <Name>SYNC_RESOURCE-CardGame</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{F63750E7-CDAE-3F46-99EE-F6D9DA18EA11}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{2949EFBC-8FAA-3E89-88C9-A3305AA78ECD}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{8DDEE853-1DE4-3E71-8D2B-D4144B5DAD44}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{D46D7FEC-F873-3B5C-A92F-B011E0FC6702}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{09B56EE3-C7E9-35FE-A2D8-73746A7B0BBA}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{C38C55D6-0B9F-366E-A2D2-CAC7988A2353}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{B732531E-2FB9-3AD0-8091-AB47E1C40FA4}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{8569F2C3-0F05-3DEC-939B-F3C6E0ED6140}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{8899486F-1538-39E9-B04D-5F6E54A2B11D}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{1826C3AF-584D-36FE-9ECB-52BE05D1C377}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{18FF31D8-057A-3DB1-9077-B853FECFFD02}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\external.vcxproj">
+      <Project>{83785921-BCB0-3932-84DF-D859B9D3DBED}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

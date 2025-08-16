@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B43BA0EA-F073-3FAB-8288-904B5890AE56}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\math\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\network\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\dell\Desktop\game\CardGame\build\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\math\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\network\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\dell\Desktop\game\CardGame\build\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\math\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\network\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\dell\Desktop\game\CardGame\build\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/dell/Desktop/game/CardGame/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/dell/Desktop/game/CardGame -BC:/Users/dell/Desktop/game/CardGame/build --check-stamp-file C:/Users/dell/Desktop/game/CardGame/build/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\base\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\math\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\network\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\dell\Desktop\game\CardGame\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\dell\Desktop\game\CardGame\build\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\ZERO_CHECK.vcxproj">
+      <Project>{1A932721-19B2-3022-8AA4-ADBB94A209A4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{F63750E7-CDAE-3F46-99EE-F6D9DA18EA11}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{2949EFBC-8FAA-3E89-88C9-A3305AA78ECD}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{8DDEE853-1DE4-3E71-8D2B-D4144B5DAD44}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{D46D7FEC-F873-3B5C-A92F-B011E0FC6702}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{09B56EE3-C7E9-35FE-A2D8-73746A7B0BBA}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{C38C55D6-0B9F-366E-A2D2-CAC7988A2353}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{B732531E-2FB9-3AD0-8091-AB47E1C40FA4}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{8569F2C3-0F05-3DEC-939B-F3C6E0ED6140}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{8899486F-1538-39E9-B04D-5F6E54A2B11D}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{1826C3AF-584D-36FE-9ECB-52BE05D1C377}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{18FF31D8-057A-3DB1-9077-B853FECFFD02}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\dell\Desktop\game\CardGame\build\engine\external\external.vcxproj">
+      <Project>{83785921-BCB0-3932-84DF-D859B9D3DBED}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
