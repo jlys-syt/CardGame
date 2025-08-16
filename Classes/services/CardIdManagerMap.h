@@ -20,7 +20,7 @@ public:
         return instance;
     }
 
-    // 注册映射关系
+    // 记录映射关系
     void addCardManager(int cardId, CardManager* manager) {
         _cardIdManagerMap[cardId] = manager;
     }

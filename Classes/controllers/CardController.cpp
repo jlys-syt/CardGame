@@ -67,13 +67,13 @@ void CardController::moveToOldPos(const UndoCardPosition& state) {
     auto& playField = _gameModel.getPlayfield();
     auto& stackField = _gameModel.getStackfield();
 
-    for (auto card : playField) { // 查看是否在桌面区域，修改卡牌模型的位置、区域信息， move 到相应位置
-        if (card.getCardId() == state.cardId) {
+    for (auto card : playField) {
+        if (card.getCardId() == state.cardId) { // 查看是否在桌面区域
             CardView* cardView = getCardView(card);
             if (cardView) {
                 auto moveTo = cocos2d::MoveTo::create(0.5f, state.position);
-                cardView->runAction(moveTo);
-                card.setPosition(state.position);
+                cardView->runAction(moveTo); // move到老位置
+                card.setPosition(state.position); // 修改卡牌模型的位置、区域信息
                 card.setZone(state.zone);
                 cardView->setGlobalZOrder(0);
             }
