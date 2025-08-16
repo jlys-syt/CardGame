@@ -13,9 +13,9 @@
 4.CardView文件中添加新资源的加载方式，在CardView触摸绑定的回调函数中添加新的if分支，用于处理新类型，更改回退逻辑添加新的方法  
 <img width="1301" height="382" alt="CardView" src="https://github.com/user-attachments/assets/db767b51-8ed3-4d19-8f9d-692c71c2c9d3" />  
 <img width="923" height="325" alt="CardView_1" src="https://github.com/user-attachments/assets/b3d2e9b7-24ba-4502-ace3-444f43c3fae6" />  
-5.在CardController中，为新类型添加处理方法，修改匹配逻辑  
-<img width="1265" height="425" alt="CardController" src="https://github.com/user-attachments/assets/849d1d82-fcdb-4390-8189-d87ff5540fb9" />  
-
+5.在CardController中，为新类型添加处理方法  
+ <img width="845" height="590" alt="CardController" src="https://github.com/user-attachments/assets/effca82d-985b-47aa-89be-dd2df403ba40" />  
+ 
 #项目整体介绍  
 #GameController通过startGame方法，传入关卡的配置文件名，调用GameModelFromLevelGenerator::generateGameModel方法，解析level_1.json文件，将相应的数据加工为CardModel类型，放在LevelConfig对象的容器里（静态数据）。用返回的LevelConfig对象构造GameModel对象（存储运行时的游戏数据）。  
 
@@ -23,7 +23,7 @@
 
 #CardView对象在初始化的过程中，加载相应的资源，生成CardManager对象，CardManager对象保存CardModel对象的引用和CardView对象的指针，将CardView的点击处理函数设置为CardManager的回调函数；CardManager对象初始化中在CardIdManagerMap中添加CardModel的id和对应Manager对象的映射关系（CardIdManagerMap为单例模式，可以通过该类，知道cardId，便可获得对应的CardManager对象和CardView对象，方便CardController中封装的卡片处理函数使用），另将每张CardView绑定相应的事件触摸点击事件。  
 
-#匹配逻辑：通过回退栈顶状态的id和CardIdManagerMap中的映射关系，获得CardManager对象，再通过CardManager的CardModel引用获得face卡面面值，大一，或小一进行匹配成功。  
+#匹配逻辑：通过回退栈顶状态的id和GameModel中的各区域的容器查询，获得CardModel对象，将该卡牌面值与触发点击事件的桌牌的面值进行匹配，面值差的绝对值等于1，则匹配成功。  
 
 
 
