@@ -82,8 +82,10 @@ bool LevelConfigLoader::parseToCardModel(rapidjson::Value& cardInfo, std::vector
 
 	// 构造CardModel对象，保存在相应区域容器里
 	int id = uniqueId++;
+	static int offset = -35; // 堆牌的初始偏移值为 -35 + 35
 	if (zone == CardZone::Stack) {
-		pos += Vec2(190, 160); // 考虑到不同区域的偏移
+		offset += 35; // 后一张比前一张向右偏移 35
+		pos += Vec2(190 + offset, 160); // 考虑到不同区域的偏移
 	}
 	else pos += Vec2(-100, -120);
 	cards.emplace_back(id, zone, pos, suitType, faceType); // 直接调用构造，相对少了构造和拷贝临时生成量

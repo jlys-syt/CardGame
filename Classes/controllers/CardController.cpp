@@ -89,7 +89,8 @@ void CardController::moveToOldPos(const UndoCardPosition& state) {
                 cardView->runAction(moveTo); // move到老位置
                 card.setPosition(state.position); // 修改卡牌模型的位置、区域信息
                 card.setZone(state.zone);
-                cardView->setGlobalZOrder(0);
+                //cardView->setGlobalZOrder(0);
+                cardView->setLocalZOrder(card.getCardId());
             }
             return;
         }
@@ -109,17 +110,17 @@ CardView* CardController::getCardView(const CardModel& card)
     return view;
 }
 
- // 移动到老位置
+ // 移动到手牌位置
 void CardController::moveToHandPos(CardModel& card) {
     if (card.getZone() != CardZone::Hand) { // 非手牌自己匹配
         auto oldZone = card.getZone();
-        cocos2d::Vec2 newPos(450, 160);
+        cocos2d::Vec2 handPos(450, 160);
         CardView* cardView = getCardView(card); // 获得卡牌视图，更改属性信息
         card.setZone(CardZone::Hand);
-        card.setPosition(newPos);
+        card.setPosition(handPos);
         if (cardView) {
             CCLOG(u8"移动卡牌，id: %d, %d -> %d", card.getCardId(),oldZone,card.getZone());
-            auto moveTo = cocos2d::MoveTo::create(0.5f, newPos); // 移动到手牌区域
+            auto moveTo = cocos2d::MoveTo::create(0.5f, handPos); // 移动到手牌区域
             cardView->runAction(moveTo);
             if (_undoManager.getUndoSize() != 0) {
                 CardModel& lastCard = getHandCard();

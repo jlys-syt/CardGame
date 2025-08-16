@@ -15,7 +15,7 @@ bool GameView::init(GameModel& model){
 	if (!Node::init()){
 		return false;
 	}
-	_cardController = new CardController(model); // 生成卡片管理器对象，用于回调函数中实现处理逻辑
+	_cardController = new CardController(model); // 生成卡片管理器对象，用于回调函数中实现点击卡片的处理逻辑
 	generateCardViews(model);
 
 	_backLabel = cocos2d::Label::createWithSystemFont(u8"回退", "Microsoft YaHei", 36); // 标签设置
@@ -55,7 +55,7 @@ void GameView::generateCardViews(GameModel& model) {
     // 生成 stackfield 区域的卡片视图，并绑定回调函数
     const auto& stackfield = model.getStackfield();
     for (auto& cardModel : stackfield) {
-        CardView* cardView = CardView::create(cardModel, Vec2(0, 0));
+        CardView* cardView = CardView::create(cardModel, Vec2(0,0));
         if (cardView) {
             _stackfieldCardViews.push_back(cardView);
             cardView->setClickCallback(handleCardClick);

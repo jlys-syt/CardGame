@@ -34,7 +34,7 @@ bool CardView::containsPoint(const cocos2d::Vec2& point) {
  
  // º”‘ÿ±≥æ∞Õº∆¨
 bool CardView::loadBackground() {
-    _background = Sprite::create(CardResConfig::getBackGround());
+    _background = Sprite::create(CardResConfig::getBackGroundSrc());
     if (!_background) {
         CCLOG(u8"±≥æ∞Õº∆¨º”‘ÿ ß∞‹!");
         return false;
@@ -50,7 +50,7 @@ bool CardView::loadBackground() {
 bool CardView::loadSmallNumber(const CardModel& model) {
     auto suit = model.getSuitType();
     auto face = model.getFaceType();
-    auto resPath = CardResConfig::getSmallNumberRes(suit, face);
+    auto resPath = CardResConfig::getSmallNumberSrc(suit, face);
 
     _smallNumber = Sprite::create(resPath);
     if (!_smallNumber){
@@ -68,7 +68,7 @@ bool CardView::loadSmallNumber(const CardModel& model) {
 bool CardView::loadBigNumber(const CardModel& model) {
     auto suit = model.getSuitType();
     auto face = model.getFaceType();
-    auto resPath = CardResConfig::getBigNumberRes(suit, face);
+    auto resPath = CardResConfig::getBigNumberSrc(suit, face);
 
     _bigNumber = Sprite::create(resPath);
     if (!_bigNumber){
@@ -85,7 +85,7 @@ bool CardView::loadBigNumber(const CardModel& model) {
  // º”‘ÿª®…´Õº±Í
 bool CardView::loadSuitIcon(const CardModel& model) {
     auto suit = model.getSuitType();
-    auto resPath = CardResConfig::getSuitRes(suit);
+    auto resPath = CardResConfig::getSuitSrc(suit);
 
     _suitIcon = Sprite::create(resPath);
     if (!_suitIcon){
