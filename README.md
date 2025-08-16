@@ -1,6 +1,6 @@
 # CardGame
 #注 由于笔记本分辨率（1920 * 1080）原因，游戏界面太长，无法看到下面的位置，所以展示的界面采用的是900 * 980分辨率。低分辨率、不修改level_1.json文件情况下，图片整体是不重叠的。  
-#演示视频 https://github.com/user-attachments/assets/d8221937-ab0a-4b17-8274-f43b323c0015  
+#演示视频 https://github.com/user-attachments/assets/c9384702-1010-43be-8e18-d7555518f41f  
 #对于可扩展性，可由以下步骤实现：  
 1.level_1.json中添加新的卡片信息  
 <img width="652" height="455" alt="level_1" src="https://github.com/user-attachments/assets/5585b392-fe31-4d45-98a7-f46861745e3e" />  
