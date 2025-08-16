@@ -9,7 +9,7 @@
 /**
 * @class CardIdManagerMap
 * @notos 卡片唯一 id 属性和对应 CardManager 对象的映射，采用单例模式
-* @duty 记录卡片唯一 id 属性和对应 CardManager 对象的映射关系，可以进行注册，以及提供获得管理和视图的接口
+* @duty 记录卡片唯一 id 属性和对应 CardManager 对象的映射关系，以及提供获得管理和视图的接口
 * @scene 获得 CardManager 、视图对象
 */
 
