@@ -90,7 +90,7 @@ void CardController::moveToOldPos(const UndoCardPosition& state) {
                 card.setPosition(state.position); // 修改卡牌模型的位置、区域信息
                 card.setZone(state.zone);
                 //cardView->setGlobalZOrder(0);
-                cardView->setLocalZOrder(card.getCardId());
+                cardView->setLocalZOrder(card.getCardId()); // 退栈后，堆牌位置按id进行层级排序
             }
             return;
         }
