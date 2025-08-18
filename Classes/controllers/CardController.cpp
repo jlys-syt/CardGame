@@ -75,7 +75,7 @@ void CardController::moveToOldPos(const UndoCardPosition& state) {
                 cardView->runAction(moveTo); // move到老位置
                 card.setPosition(state.position); // 修改卡牌模型的位置、区域信息
                 card.setZone(state.zone);
-                cardView->setGlobalZOrder(0); // 设置新层级，置于最底部
+                cardView->setLocalZOrder(card.getCardId()); // 设置新层级，置于最底部
             }
             return;
         }
@@ -90,7 +90,7 @@ void CardController::moveToOldPos(const UndoCardPosition& state) {
                 card.setPosition(state.position); // 修改卡牌模型的位置、区域信息
                 card.setZone(state.zone);
                 //cardView->setGlobalZOrder(0);
-                cardView->setLocalZOrder(card.getCardId()); // 退栈后，堆牌位置按id进行层级排序
+                cardView->setLocalZOrder(card.getCardId()); // 堆牌位置按id进行层级排序
             }
             return;
         }
@@ -124,6 +124,7 @@ void CardController::moveToHandPos(CardModel& card) {
             cardView->runAction(moveTo);
             if (_undoManager.getUndoSize() != 0) {
                 CardModel& lastCard = getHandCard();
+                cardView->setLocalZOrder(0); // 解决未结束程序，栈退空，继续游玩，手牌区域渲染层级问题
                 cardView->setLocalZOrder(getCardView(lastCard)->getLocalZOrder() + 1); // 层级比手牌的最上面一张大
             }
         }
